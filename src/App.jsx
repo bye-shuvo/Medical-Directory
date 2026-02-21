@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import "h8k-components";
 import Search from "./components/Search";
 import Records from "./components/Records";
 
@@ -11,7 +10,7 @@ const App = () => {
   const [id, setId] = useState("");
   return (
     <div className="App">
-      <h8k-navbar header={title}></h8k-navbar>
+      <h2>{title}</h2>
       <div className="content">
         <Search setRecord={setRecord} setId={setId} id={id} />
         <Records record={record} setRecord={setRecord}/>
